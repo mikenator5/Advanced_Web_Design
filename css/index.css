@@ -1,14 +1,74 @@
 body {
-    background-color: white;
+    background-color: #29648a;
 }
 
+/*Color Scheme used:
+    #25274D
+    #464866
+    #AAABB8
+    #2E9CCA
+    #29648A
+*/
 #mainH1 {
-    background-color: lightyellow;
+    background-color: #25374d;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
+    color: white;
     font-size: 50px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    border-radius: 40px;
 }
 
 #intro {
+    width: 100%;
+    color: #aaabb8;
+}
+
+.content {
     width: 1000px;
+    float: left;
+    padding-left: 20px;
+    font-size: 20px;
+}
+#tom {
+    float: right;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+#head {
+    background-color: #25374d;
+    border-radius: 40px;
+}
+
+#nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #464866;
+    margin-top: 20px;
+}
+  
+.nav-li {
+    float: left;
+    text-align: center;
+}
+  
+.nav-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.nav-li a:hover:not(.active) {
+    background-color: #ddd;
+}
+  
+.nav-li a.active {
+    color: white;
+    background-color: #2e9cca;
 }
