@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Services</title>
+    <style>
+        .imageInRows {
+            border-radius: 20px;
+        }
+        .row {
+            text-align: center;
+        }
+        .desc {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        
+        <img id="logo" src="../images/logoFinal.png" alt="logo">
+
+        <div id="nav">
+            <ul id="nav-ul">
+                <li class="nav-li"><a href="../index.html">Home</a></li>
+                <li class="nav-li"><a class="active" href="../pages/services.html">Services</a></li>
+                <li class="nav-li"><a href="../pages/about.html">About</a></li>
+                <li class="nav-li"><a href="../pages/staff.html">Staff</a></li>
+                <li class="nav-li"><a href="../pages/faq.html">FAQ</a></li>
+                <li class="nav-li"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="../js/services.js"></script>
+
+    <script>
+        var im = {
+        
+        names : ["android",
+            "ipad",
+            "nintendo_switch",
+            "desktop",
+            "laptop",
+            "mac",
+            "macbook",
+            "iphone",
+            "printer",
+            "switch",
+            "router",
+            "watch"],
+
+        text : [
+                "Bring in any android phone and we'll fix it!",
+            "Have a broken iPad? Let us take a look at it!",
+            "We can fix consoles as well!",
+            "Something not working in your desktop? We'll take a look",
+            "Is your laptop giving you problems? We'll figure out why!",
+            "Don't want to deal with the expensive Apple store? We'll fix it up for ya!",
+            "Don't want the hassle of shipping it to Apple? Come to us!",
+            "Does your iPhone have a broken screen? We can fix it cheaper than Apple would!",
+            "Is your printer broken? We'll save you the hassle of buying a new one!",
+            "Is your companies switch not working? We'll take a look at it!",
+            "Can't connect to wifi? Bring it in!",
+            "Smartwatch broken? Come on in!"
+            ]
+        }
+        window.onload = function() {
+            create_gallery(im);
+        }
+    </script>
+</body>
+</html>

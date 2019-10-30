@@ -9,16 +9,8 @@ body {
     #2E9CCA
     #29648A
 */
-#mainH1 {
-    background-color: #25374d;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-    font-size: 50px;
-    margin-top: 20px;
+#logo {
     padding-top: 20px;
-    padding-bottom: 0px;
-    border-radius: 40px;
 }
 
 #intro {
@@ -31,15 +23,21 @@ body {
     float: left;
     padding-left: 20px;
     font-size: 20px;
+    padding: 20px;
 }
-#tom {
+#smile {
     float: right;
     padding-right: 20px;
     padding-top: 20px;
 }
+#money {
+    float: right;
+}
+
 #head {
     background-color: #25374d;
     border-radius: 40px;
+    text-align: center;
 }
 
 #nav-ul {
@@ -72,3 +70,20 @@ body {
     color: white;
     background-color: #2e9cca;
 }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Staff</title>
+    <style>
+            .imageInRows {
+                border-radius: 20px;
+            }
+            .row {
+                text-align: center;
+            }
+            .desc {
+                color: white;
+            }
+        </style>
+</head>
+<body>
+    <div id="head">
+
+        <img id="logo" src="../images/logoFinal.png" alt="logo">
+
+        <div id="nav">
+            <ul id="nav-ul">
+                <li class="nav-li"><a href="../index.html">Home</a></li>
+                <li class="nav-li"><a href="services.html">Services</a></li>
+                <li class="nav-li"><a href="about.html">About</a></li>
+                <li class="nav-li"><a class="active" href="staff.html">Staff</a></li>
+                <li class="nav-li"><a href="faq.html">FAQ</a></li>
+                <li class="nav-li"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../js/services.js"></script>
+
+    <script>
+        var im = {
+        
+        names : [
+            "dwayne",
+            "chris",
+            "john",
+            "aziz",
+            "nick",
+            "adam",],
+
+        text : [
+                "Dwayne Johnson has been with us since day one. He is loyal and never backs down from a problem. If you ask him to do something, he'll get it done. He took up this position as side job while he's not filming a movie.",
+            "Chris Pratt loves working here. He is always the first one here since becoming the manager. He strives to make everyone he meets happy to be there. If you need any help, contact him.",
+            "John Cena was our first employee here. He has been a huge help getting us known. Although, since hiring Dwayne, they tend to butt heads every once in a while. We all know they are just messing around!",
+            "Aziz Ansari is the founder of Tom's Tech Repair. Having been known for his role in Parks and Recreation, he decided to portray that character in his business. Aziz loves what he does, and is an accomplished entrepreneur. He hopes to expand Tom's Tech Repair in the future!",
+            "Nick Offerman is as trustworthy as you can get. He single-handedly made every chair, table, and furniture in the company! He is an excellent wood worker, and loves to do it in his free time. Nick also has a skill in phone repairs, if you have a broken phone, bring it in to him!",
+            "Adam Scott is our newest employee. He started in August of 2019. All though he is new, he is showing great growth in the industry! Adam has learned the necessary skills very quickly, and we are proud to call him one of ours!",
+            ]
+        }
+        window.onload = function() {
+            create_gallery(im);
+        }
+    </script>
+</body>
+</html>
