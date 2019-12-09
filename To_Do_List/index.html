@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .main {
+            text-align: center;
+        }
+
+        #input {
+            width: 600px;
+            height: 24px;
+            border-style: solid;
+            border-color: gray;
+            border-width: 1px;
+            border-radius: 10px;
+        }
+
+
+        button {
+            margin: 0px;
+            display: inline;
+            border-style: solid;
+            border-color: gray;
+            border-width: 1px;
+            border-radius: 10px;
+        }
+
+        .tasks {
+            margin: auto;
+            width: 33%;
+            padding: 0px;
+
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table h4 {
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .button {
+            border: none;
+            background-color: aqua;
+            font-size: 16px;
+            padding: 8px;
+            margin-top: 7px;
+        }
+
+        .button:hover {
+            background-color: gray;
+        }
+
+        .x {
+            float: right;
+            padding-right: 5px;
+        }
+
+        #row {
+            text-align: center;
+            vertical-align: middle;
+            background-color: aqua;
+            padding: 20px;
+            width: 100%;
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Work To-Dos</h1>
+        <h4>Enter text into the input field to add items to your list (max. 28 characters).</h4>
+        <h4>Click the "&#10004;" to mark it as complete.</h4>
+        <h4>Click the "X" to remove the item from your list.</h4>
+
+        <div class="form">
+            <label style="display: block">
+            <input type="text" id="input" maxlength="28">
+            <button type="submit" onclick="newItem()" id="sub"><i class="fa fa-pencil" style="font-size: 14px; padding: 5px;"></i></button></label>
+        </div>
+        <br>
+
+        <table class="tasks"></table>
+
+    </div>
+    
+    <script>
+        function newItem() {
+            var a = document.getElementById("input").value;
+            var b = document.createElement("h4");
+            b.innerHTML = a;
+
+            var table = document.getElementsByClassName("tasks");
+        
+            var row = table[0].insertRow();
+            row.setAttribute('id', 'row');
+            
+
+            var cell1 = row.insertCell(0);
+            cell1.setAttribute('style', 'float: left; padding: 7px;');
+
+            var cell2 = row.insertCell(1);
+            cell2.setAttribute('style', 'float: right; padding-right; 5px;');
+
+            var button_check = document.createElement("button");
+            button_check.innerHTML = "&#10004;";
+            button_check.onclick = deleteFunction;
+
+            var button_x = document.createElement("button");
+            button_x.innerHTML = "X";
+            button_x.onclick = deleteFunction;
+
+            
+            button_check.setAttribute('class', 'button');
+            button_x.setAttribute('class', 'button');
+
+            cell1.appendChild(b);
+            cell2.appendChild(button_check)
+            cell2.appendChild(button_x);
+
+            document.getElementById("input").value = "";
+        }
+
+        function deleteFunction() {
+            document.getElementById("row").remove();
+        }
+    </script>
+</body>
+</html>

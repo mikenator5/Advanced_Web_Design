@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.main {
+    height: 20vh;
+    font-size: 2em;
+    color: white;
+    background-color: #233343;
+}
+
+.main h1, h3 {
+    margin: 0;
+    text-align: center;
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
+}
+.control {
+    background-color: white;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.control button {
+    background: none;
+    border: none;
+    height: 100%;
+    outline: none;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    font-size: inherit;
+}
+
+.control button:hover {
+    background-color: #233344;
+    color: white;
+}
+
+#container {
+    padding-top: 25px;
+    margin: auto;
+    max-width: 720px;
+}
+
+.game {
+    background-color: #233343;
+    height: 76.6vh;
+}
+.square {
+    background-color: purple;
+    border-radius: 36%;
+    float: left;
+    margin: 1.66%;
+    padding-bottom: 27%;
+    width: 30%;
+}
