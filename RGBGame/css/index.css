@@ -52,10 +52,16 @@ body {
     height: 76.6vh;
 }
 .square {
-    background-color: purple;
+    background-color: #233343;
     border-radius: 36%;
     float: left;
     margin: 1.66%;
     padding-bottom: 27%;
     width: 30%;
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+}
+
+.square:hover {
+    background-color: #233343;
 }

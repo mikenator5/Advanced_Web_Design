@@ -1,0 +1,44 @@
+body {
+    background-color: #40bdf7;
+}
+
+.container {
+    position: relative;
+    background-color: #8dd9fc;
+    text-align: center;
+    width: 65%;
+    left: 18%;
+    padding-top: 10px;
+    margin-top: 5%;
+    border: solid black 2px;
+}
+
+#question {
+    position: relative;
+    background-color: navy;
+    border-radius: 25px;
+    padding: 15px;
+    color: white;
+    width: 75%;
+    left: 12%;
+}
+
+#answerContainer {
+    margin: auto;
+    max-width: 75%;
+    height: 100px;
+    padding-bottom: 15px;
+}
+
+#answer {
+    position: relative;
+    width: 33%;
+    background-color: #b0e6ff;
+    padding: 10px;
+    border-radius: 10px;
+    float: left;
+    margin: 5px;
+    left: 14.25%;
+    text-align: left;
+    user-select: none;
+}
